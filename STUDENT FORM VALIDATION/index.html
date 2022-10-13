@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c261604ec8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- creating nav division -->
+    <div class="header">
+        <!-- creating logo -->
+        <div class="logo">
+            <img src="./images.png" alt="logo">
+        </div>
+        <!-- navigation -->
+        <div class="navi">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="#">services 1</a></li>
+                            <li><a href="#">services 2</a></li>
+                            <li><a href="#">services 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- second logo -->
+        <div class="seclogo">
+            <face><i class="fa-brands fa-facebook-f"></i></face>
+            <insta><i class="fa-brands fa-instagram"></i></insta>
+            <linked><i class="fa-brands fa-linkedin-in"></i></linked>
+            <twitter><i class="fa-brands fa-twitter"></i></twitter>
+            <you><i class="fa-brands fa-youtube"></i></you>
+        </div>
+    </div>
+    <!-- creating form portion -->
+    <div class="formbox">
+        <div class="container-box">
+
+            
+            
+
+            <!-- creating form -->
+            <form action="" name="reg_form" onsubmit="return validate()">
+            <h1>REGISTRATION FORM</h1>
+
+            <p>&nbsp;</p>
+            <!-- uploading images -->
+            <div class="imgdiv">
+                <img src="./editup.jpg" alt="upload" width="200px" id="output"><br>
+
+                <p><input type="file" accept="image/*" name="image" id="file"
+                    onchange="loadfile(event)" style="display: none;"></p>
+                    <p><label for="file" style="cursor: pointer;">UPLOAD IMAGE HERE</label></p>
+            </div>
+            
+            <label><b>FIRST NAME : </b></label>
+            <br>
+            <input type="text" name="fname" id="fname" placeholder="enter your first name">
+            <!-- <span id="fname-error"></span> -->
+            <br>
+            <p>&nbsp;</p>
+            
+            <label><b>LAST NAME : </b></label>
+            <br>
+            <input type="text" name="lname" id="lname" placeholder="enter your last name">
+            <!-- <span id="lname-error"></span> -->
+            <br>
+            <p>&nbsp;</p>
+            
+            <label><b>FATHER'S NAME : </b></label>
+            <br>
+            <input type="text" name="faname" id="faname" placeholder="enter your father's name">
+            <!-- <span id="faname-error"></span> -->
+            <br>
+            <p>&nbsp;</p>
+            
+
+            <label><b>GENDER : </b></label>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="male" name="gender" id="male" placeholder="enter your gender">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MALE&nbsp;&nbsp;&nbsp;
+            <input type="radio" value="female" name="gender" id="female" placeholder="enter your gender">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FEMALE&nbsp;&nbsp;&nbsp;
+            <input type="radio" value="transgender" name="gender" id="transgender" placeholder="enter your gender">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRANSGENDER
+            <br>
+            <p>&nbsp;</p>
+            
+            <label><b>DATE OF BIRTH : </b></label>
+            <br>
+            <input type="date" name="dob" id="dob" placeholder="enter your date of birth">
+            <br>
+            <p>&nbsp;</p>
+            
+            <label><b>EMAIL ID : </b></label>
+            <br>
+            <input type="text" name="email" id="email" placeholder="enter your mail-id">
+            <br>
+            <p>&nbsp;</p>
+            
+            <label><b>DEPARTMENT : </b></label>
+            <br>
+            <select name="department">    
+                <option value="select course">select course</option>    
+                <option value="MECH">MECH</option>    
+                <option value="EEE">EEE</option>    
+                <option value="CSE">CSE</option>    
+                <option value="ECE">ECE</option>
+                <option value="CIVIL">CIVIL</option>    
+            </select>    
+            <br>
+            <p>&nbsp;</p>
+            
+            <label><b>CONTACT NO : </b></label>
+            <br>
+            <input type="number" name="contact" id="contact" placeholder="enter your contact number">
+
+            <br>
+            <p>&nbsp;</p>
+            
+            <input type="submit" name="submit" value="submit">
+            
+            
+            <input type="reset" name="reset" value="reset">
+            
+
+            
+            </form>
+            
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

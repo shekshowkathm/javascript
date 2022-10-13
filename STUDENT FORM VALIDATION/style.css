@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: rgba(255, 166, 0, 0.962);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    display: flex;
+    width: 100%;
+}
+.logo{
+    width: 30%;
+}
+.logo img{
+    width: 190px;
+    height: 190px;
+    margin-left: 90px;
+    border-radius: 30px;
+    padding: 10px 0;
+    border-radius: 70px;
+}
+.logo img:hover{
+    transform: rotate(360deg);
+    transition: 1.5s;
+    
+}
+.navi{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.navi ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: 0;
+}
+.navi ul li{
+    float: left;
+}
+.navi ul li a{
+    display: block;
+    text-decoration: none;
+    color: blue;
+    padding: 12px 20px;
+    margin-left: 10px;
+}
+.navi ul li a:hover{
+    background-color: blue;
+    color: #ffff;
+    border-radius: 30px;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.submenu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.submenu ul li a{
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 40px;
+    margin-left: 0;
+}
+.navi ul li:hover .submenu{
+    display: block;
+    background-color: #1DA1F2;
+    
+    /* background-color: tomato; */
+}
+.seclogo{
+    width: 40%;
+    display: flex;
+    /* border-style: groove;
+    border-color: darkorchid; */
+    align-items: center;
+    padding-left: 60px; 
+}
+.seclogo i{
+    font-size: 40px;
+    margin-left: 50px;
+}
+face:hover{
+    font-size: 60px;
+    color: #4267B2;
+    
+}
+insta:hover{
+    color:  #FFC0CB;
+    font-size: 60px;
+}
+linked:hover{
+    font-size: 60px;
+    color: #0A66C2;
+}
+twitter:hover{
+    font-size: 60px;
+    color:  #1DA1F2 ;
+}
+you:hover{
+    font-size: 60px;
+    color: #FF0000;
+}
+.formbox{
+    /* border-style: groove; */
+    /* border-color: rgb(94, 204, 50); */
+    width: 70%;
+    margin-left: 230px;
+    
+}
+.formbox h1{
+    text-align: center;
+}
+.container-box{
+    padding-top: 50px;
+}
+form{
+    /* text-align: center; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: rgba(255, 166, 0, 0.439);
+    border: 3px solid #000;
+    /* display: inline-flex; */
+    flex-direction: column-reverse;
+    
+}
+input[type="text"]{
+    margin-top: 20px;
+    width: 60%;
+    height: 50px;
+    border: 3px solid green; 
+    margin-left: 50px;
+    font-size: 20px;
+    padding-left: 30px;
+    border-radius: 15px;
+}
+input[type="submit"] {
+    height: 50px;
+    width: 25%;
+    margin-left: 195px;
+    font-size: 20px;
+    color: #fff;
+    background-color: darkgreen;
+    border-radius: 15px;
+
+}
+input[type="submit"]:hover{
+    color: #fff;
+    background-color: limegreen;
+    border-radius: 25px;
+}
+input[type="reset"]{
+    height: 50px;
+    width: 25%;
+    margin-left: 70px;
+    font-size: 20px;
+    color: #fff;
+    background-color: darkgreen;
+    border-radius: 15px;
+}
+input[type="reset"]:hover{
+    color: #fff;
+    background-color: limegreen;
+    border-radius: 25px;
+}
+/* input[type="radio"]{
+    padding-left: 23px;
+    
+} */
+input[type="date"]{
+    margin-top: 20px;
+    height: 50px;
+    width: 60%;
+    border: 3px solid green; 
+    margin-left: 50px;
+    font-size: 20px;
+    padding-left: 30px;
+    border-radius: 15px;
+}
+input[type="number"]{
+    margin-top: 20px;
+    height: 50px;
+    width: 60%;
+    border: 3px solid green; 
+    margin-left: 50px;
+    font-size: 20px;
+    padding-left: 30px;
+    border-radius: 15px;
+}
+.formbox select{
+    border: 3px solid green; 
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 60%;
+    font-size: 20px;
+    
+    margin-left: 50px;
+    padding-left: 10px;
+    border-radius: 15px;
+
+}
+.container-box label{
+    font-size: 25px;
+    
+
+}
+.formbox p{
+    font-size: 20px;
+}
+.imgdiv{
+    float: right;
+}
+.imgdiv img{
+    border-radius: 50px;
+}
+.imgdiv p{
+    margin-top: 30px;
+}
+
+
